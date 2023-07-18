@@ -1,4 +1,10 @@
-.header {
-    display: flex;
-    background-color: #c94c4c;
+header {
+  padding: 1rem !important;
+  background-color: black;
+}
+
+header .logo {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
 }

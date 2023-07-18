@@ -1,32 +1,34 @@
-import './App.css';
-import Header from './components/header/Header';
-import Pizzas from './components/pizza/Pizzas';
+import "./App.css";
+import Body from "./components/Body/Body";
+import Header from "./components/Header/Header";
 function App() {
-
-  const pizzas= [
+  const pizzas = [
     {
       name: "Onion pizza",
       desc: "A pizza with onions",
-      price: 200
+      price: 200,
     },
     {
       name: "Tomato pizza",
       desc: "A pizza with onions",
-      price: 400
+      price: 400,
     },
     {
       name: "Capsicum pizza",
       desc: "A pizza with onions",
-      price: 600
-    }
+      price: 600,
+    },
   ];
-  const toppings = ['Onion', 'Tomato', 'Paneer']
+  const toppings = ["Onion", "Tomato", "Paneer"];
 
+  const filterOptionHandler = (option) => {
+    console.log(option);
+  };
 
   return (
     <div className="App">
-      <Header/>
-      <Pizzas pizzaList={pizzas} toppingList={toppings}/>
+      <Header getFilterOption={filterOptionHandler} />
+      <Body />
     </div>
   );
 }
