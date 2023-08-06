@@ -1,3 +1,4 @@
+import "./Categories.css";
 import CategoryList from "./CategoryList";
 
 const defaultCategories = [
@@ -16,7 +17,11 @@ const defaultCategories = [
 ];
 
 const Categories = () => {
-  return <CategoryList defaultCategories={defaultCategories} />;
+  return (
+    <div className="categories">
+      <CategoryList defaultCategories={defaultCategories} />
+    </div>
+  );
 };
 
 export default Categories;

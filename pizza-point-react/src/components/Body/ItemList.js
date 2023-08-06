@@ -1,5 +1,5 @@
 import Item from "./Item/Item";
-
+import "./ItemList.css";
 export default function ItemList() {
   const defaultItems = [
     {
@@ -30,13 +30,57 @@ export default function ItemList() {
       type: "veg",
       price: 70,
     },
+    {
+      name: "Coke",
+      desc: "",
+      category: "Beverages",
+      type: "veg",
+      price: 70,
+    },
+    {
+      name: "Coke",
+      desc: "",
+      category: "Beverages",
+      type: "veg",
+      price: 70,
+    },
+    {
+      name: "Coke",
+      desc: "",
+      category: "Beverages",
+      type: "veg",
+      price: 70,
+    },
+    {
+      name: "Coke",
+      desc: "",
+      category: "Beverages",
+      type: "veg",
+      price: 70,
+    },
+    {
+      name: "Coke",
+      desc: "",
+      category: "Beverages",
+      type: "veg",
+      price: 70,
+    },
+    {
+      name: "Coke",
+      desc: "",
+      category: "Beverages",
+      type: "veg",
+      price: 70,
+    },
   ];
 
   return (
-    <ul>
-      {defaultItems.map((item) => (
-        <Item item={item} />
-      ))}
-    </ul>
+    <div className="item-list">
+      <ul>
+        {defaultItems.map((item) => (
+          <Item item={item} />
+        ))}
+      </ul>
+    </div>
   );
 }

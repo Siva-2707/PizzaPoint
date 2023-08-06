@@ -1,7 +1,8 @@
+import PizzaCard from "../../UI/PizzaCard";
 import "./Item.css";
 const Item = (props) => {
   return (
-    <li>
+    <PizzaCard>
       <div className="item-container">
         <div className="item-name">{props.item.name}</div>
         <div className="item-desc">{props.item.desc}</div>
@@ -9,7 +10,7 @@ const Item = (props) => {
         {/* <div className="item-category">{props.item.category}</div> */}
         {/* <div className="item-type">{props.item.type}</div> */}
       </div>
-    </li>
+    </PizzaCard>
   );
 };
 
